@@ -10,7 +10,7 @@ from zipfile import ZipFile
 
 import duckdb
 
-SOURCE = "https://s3.amazonaws.com/tripdata/202401-citibike-tripdata.csv.zip"
+SOURCE = "https://s3.amazonaws.com/tripdata/202401-citibike-tripdata.zip"
 WORK = Path("work")
 DATABASE = WORK / "citibike.duckdb"
 

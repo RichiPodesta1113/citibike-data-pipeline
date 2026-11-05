@@ -1,6 +1,6 @@
 # Citi Bike Data Pipeline
 
-Pipeline de viajes de bicicletas compartidas de Nueva York para enero de 2024. Python descarga el [archivo oficial](https://s3.amazonaws.com/tripdata/202401-citibike-tripdata.csv.zip) publicado por [Citi Bike](https://citibikenyc.com/system-data). DuckDB carga los CSV y dbt construye las tablas de viajes válidos y actividad. El dashboard HTML muestra conteos, salidas por día y hora y las diez estaciones con más salidas.
+Pipeline de viajes de bicicletas compartidas de Nueva York para enero de 2024. Python descarga el [archivo oficial](https://s3.amazonaws.com/tripdata/202401-citibike-tripdata.zip) publicado por [Citi Bike](https://citibikenyc.com/system-data). DuckDB carga los CSV y dbt construye las tablas de viajes válidos y actividad. El dashboard HTML muestra conteos, salidas por día y hora y las diez estaciones con más salidas.
 
 El almacenamiento del proyecto es local durante la compilación y el despliegue se realiza en GitHub Pages. El proveedor de datos aloja su archivo original en S3. El proyecto no requiere cuenta ni recursos en AWS.
 

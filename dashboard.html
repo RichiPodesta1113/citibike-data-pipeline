@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Citi Bike | Análisis de viajes</title>
+<style>
+* {{ box-sizing: border-box; }}
+body {{ margin: 0; background: #edf5f2; color: #152d2a; font: 1rem/1.55 system-ui, sans-serif; }}
+header {{ background: #123631; color: #fff; padding: 2.5rem max(1rem, calc((100vw - 69rem) / 2)); }}
+h1 {{ margin: 0; font-size: clamp(2rem, 5vw, 3.5rem); }}
+header p {{ color: #cce9da; margin: 0; }}
+main {{ max-width: 71rem; margin: auto; padding: 1rem; }}
+.summary {{ display: flex; flex-wrap: wrap; gap: 1rem; }}
+.summary p, section {{ background: #fff; padding: 1rem; border-radius: .6rem; }}
+.summary p {{ flex: 1 1 12rem; }}
+.summary strong {{ display: block; font-size: 1.8rem; }}
+section {{ margin: 1rem 0; }}
+h2 {{ margin: 0 0 .75rem; }}
+ul {{ padding: 0; margin: 0; list-style: none; }}
+li {{ display: grid; grid-template-columns: minmax(6rem, 2fr) minmax(2rem, 4fr) auto; gap: .6rem; align-items: center; padding: .2rem 0; }}
+meter {{ width: 100%; accent-color: #17785b; }}
+a {{ color: #125644; }}
+</style>
+<header><p>{period}</p><h1>Citi Bike | Análisis de viajes</h1></header>
+<main>
+<div class="summary">
+<p>Filas de origen<strong>{raw}</strong></p>
+<p>Viajes válidos<strong>{clean}</strong></p>
+<p>Filas descartadas<strong>{rejected}</strong></p>
+</div>
+{sections}
+<footer><p>Datos de <a href="https://citibikenyc.com/system-data">Citi Bike System Data</a>. Las horas corresponden a la hora local del archivo original. La clasificación excluye los viajes sin nombre de estación de salida.</p></footer>
+</main>
+</html>

@@ -1,0 +1,7 @@
+.venv/
+work/
+site/
+target/
+logs/
+__pycache__/
+.user.yml

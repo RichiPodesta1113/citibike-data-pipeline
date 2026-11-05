@@ -1,0 +1,15 @@
+version: 2
+sources:
+  - name: ingest
+    schema: main
+    tables:
+      - name: raw_trips
+models:
+  - name: trips
+    columns:
+      - name: ride_id
+        data_tests: [unique, not_null]
+      - name: started_at
+        data_tests: [not_null]
+      - name: ended_at
+        data_tests: [not_null]
